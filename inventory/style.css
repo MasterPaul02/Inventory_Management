@@ -1,0 +1,188 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container-fluid {
+    width: 100vw; /* Full width of the viewport */
+    padding: 0;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    background-color: #17153B;
+    min-height: 100vh;
+    position: fixed; /* Fix it to the left of the screen */
+    top: 0;
+    left: 0;
+    width: 16.66%; /* This is equivalent to 2 out of 12 columns */
+    padding: 0;
+    transition: all 0.3s ease; /* Smooth transition for responsive adjustments */
+  }
+
+  .sidebar a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .sidebar a:hover {
+    background-color: #FF001B;
+  }
+  .sidebar a i {
+    margin-right: 10px;
+  }
+
+  /* Sidebar Logo Styling */
+  .sidebar-logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .sidebar-logo img {
+    max-width: 80%; /* Adjust the size of the logo */
+    height: auto;
+  }
+
+  /* Admin Bar Styling */
+  .admin-bar {
+    padding: 15px;
+    background-color: white;
+    border-bottom: 2px solid #dee2e6; /* Add bottom border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: calc(100% - 16.66%); /* Takes up the full width after the sidebar */
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    left: 16.66%; /* Shift it right, after the sidebar */
+  }
+  .admin-bar .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+
+  /* Profile Image (Admin Avatar) */
+  .profile-img {
+    width: 40px; /* Adjust the size of the image */
+    height: 40px;
+    border-radius: 50%; /* Circle border */
+    object-fit: cover; /* Ensure the image covers the circle */
+    margin-right: 10px; /* Space between image and the dropdown */
+  }
+
+  /* Content */
+  .content {
+    margin-left: 16.66%; /* Shift content right, after the sidebar */
+    padding: 20px;
+    margin-top: 60px; /* Space between admin bar and content */
+  }
+
+  /* Greeting Section */
+  .greeting-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 50%; /* Set the width of the greeting section to 30% */
+    padding: 20px;
+    background-color: #17153B;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 20px;
+  }
+  .greeting-section img {
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  .greeting-section h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+  }
+
+  /* New Content Section */
+  .new-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 50%; /* Set the width of the section to 30% */
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    border: 1px solid black;
+  }
+  .new-content-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+  }
+  .new-content-section a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  .new-content-section a:hover {
+    text-decoration: underline;
+  }
+
+  /* Table Styles */
+  .table-container {
+    display: flex;
+    justify-content: flex-start; /* Align tables to the left */
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .table-container table {
+    width: 23%; /* Set the width of each table */
+    border-collapse: collapse;
+    margin-right: 20px; /* Space between tables */
+  }
+
+  .table-container table th, .table-container table td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+  }
+
+  .table-container table th {
+    background-color: #f8f9fa;
+  }
+
+  .table-container table td {
+    text-align: center;
+  }
+
+  /* Right Sidebar Box */
+  .right-sidebar-box {
+    position: absolute;
+    right: 25px;
+    top: 60px; /* Just below the admin bar */
+    width: 26%; /* Takes up 25% of the viewport width */
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+    /* box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2); */
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    margin-top: 20px; /* Added margin between admin bar and right sidebar */
+  }
+  .right-sidebar-box h5 {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .right-sidebar-box p {
+    font-size: 17px;
+    color: #333;
+  }

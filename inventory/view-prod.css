@@ -1,0 +1,45 @@
+body {
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%; /* Make the table full width */
+    border-collapse: collapse; /* Combine borders for cleaner look */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Add border to table cells */
+    padding: 12px; /* Add padding for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.product-image {
+    width: 50px;
+    height: 50px;
+}
+
+th {
+    background-color: #007bff; /* Bootstrap primary color for header */
+    color: rgb(0, 0, 0); /* White text for header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Light gray for hover effect */
+}
+
+img {
+    max-width: 100px; /* Set a max width for product images */
+    height: auto; /* Keep the aspect ratio */
+}
